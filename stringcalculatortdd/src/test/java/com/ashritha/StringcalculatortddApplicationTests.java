@@ -1,6 +1,7 @@
 package com.ashritha;
 
 
+import org.assertj.core.api.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -21,6 +22,11 @@ class StringcalculatortddApplicationTests {
     @Test
     public final void whenNonNumberIsUsedThenExceptionIsThrown() {
         StringCalculator.add("1,X");
+    }
+    @Test
+    public final void whenEmptyStringIsUsedThenReturnValueIs0() {
+        Assert.assertEquals(0, StringCalculator.addEmpty(""));
+       
     }
 
 }
