@@ -1,4 +1,4 @@
-package com.ashritha;
+package com.ashritha.test;
 
 
 import org.assertj.core.api.Assert;
