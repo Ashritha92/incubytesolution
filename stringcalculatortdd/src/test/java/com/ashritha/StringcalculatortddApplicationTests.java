@@ -37,5 +37,13 @@ class StringcalculatortddApplicationTests {
     public final void whenTwoNumbersAreUsedThenReturnValueIsTheirSum() {
         Assert.assertEquals(3+6, StringCalculator.sum("3,6"));
     }
+//  @Test(expected = RuntimeException.class)
+//  public final void whenMoreThan2NumbersAreUsedThenExceptionIsThrown() {
+//      StringCalculator.add("1,2,3");
+//  }
+    @Test
+    public final void whenAnyNumberOfNumbersIsUsedThenReturnValuesAreTheirSums() {
+        Assert.assertEquals(3+6+15+18+46+33, StringCalculator.addUnknown("3,6,15,18,46,33"));
+    }
 
 }
