@@ -28,5 +28,14 @@ class StringcalculatortddApplicationTests {
         Assert.assertEquals(0, StringCalculator.addEmpty(""));
        
     }
+    @Test
+    public final void whenOneNumberIsUsedThenReturnValueIsThatSameNumber() {
+        Assert.assertEquals(3, StringCalculator.add("3"));
+    }
+     
+    @Test
+    public final void whenTwoNumbersAreUsedThenReturnValueIsTheirSum() {
+        Assert.assertEquals(3+6, StringCalculator.sum("3,6"));
+    }
 
 }
